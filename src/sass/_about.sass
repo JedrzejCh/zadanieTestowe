@@ -1,0 +1,645 @@
+
+.about
+  height: auto
+  margin-top: 3rem
+  position: relative 
+  opacity: 0
+  transition: 3s
+.active
+  opacity: 1
+.about__grid
+  display: grid
+  grid-template-columns: 25% 25%
+  grid-template-rows: 1fr 1fr auto
+  justify-content: center
+  grid-row-gap: 2rem
+  grid-column-gap: 4rem
+.grid__logo
+  grid-row-start: 1
+  grid-row-end: 1
+  grid-column-start: 1
+  grid-column-end: 1
+.grid__link--after
+  position: relative 
+  &::after
+    content: "01"  
+    position: absolute
+    top: 0 
+    left: 70%
+    font-family: 'ff-good-headline-web-pro-ext', sans-serif
+    font-size: 1.2rem
+    color: #868782
+    font-weight: bold
+    letter-spacing: 1px
+.grid__link
+  margin-left: 2rem
+.grid__paragraph
+  grid-row-start: 1
+  grid-row-end: 1
+  grid-column-start: 2
+  grid-column-end: 2
+  font-size: 0.875rem
+.grid__logo2
+  grid-row-start: 2
+  grid-row-end: 2
+  grid-column-start: 1
+  grid-column-end: 1
+  margin: 0 auto
+.grid__paragraph-right
+  grid-row-start: 2
+  grid-row-end: 2
+  grid-column-start: 2
+  grid-column-end: 2
+.grid__paragraph
+  font-family: "Sofia-pro", sans-serif
+  font-size: .875rem
+  font-weight: normal
+  line-height: 1.3rem
+  color: #868782
+.paragraph__list
+  grid-row-start: 3
+  grid-row-end: 3
+  grid-column-start: 2
+  grid-column-end: 2
+  margin-top: -4rem
+  font-family: 'ff-good-headline-web-pro-ext', sans-serif
+  color: #868782
+  list-style: none
+  text-transform: uppercase
+  display: block
+  letter-spacing: 1px
+  padding: 0
+.list__item
+  margin-bottom: .8rem
+  width: 100%
+  height: auto
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  align-items: flex-end
+  position: relative
+.item__duty
+  font-size: 1rem
+  font-weight: bold
+  display: block
+  flex-shrink: 0
+  margin-right: .3rem
+.item__separator
+  width: 100%
+  flex-shrink: 1
+  position: relative
+  &::after
+    content: ""
+    position: absolute
+    bottom: 0
+    transform: translateY(-200%)
+    left: 0
+    width: 100%
+    height: 1px
+    background-color: #333D3C
+.item__person
+  font-size: 1.5rem
+  font-weight: bold
+  color: #333D3C
+  display: block
+  padding-right: 2rem
+  letter-spacing: 1.5px
+  flex-shrink: 0
+  line-height: 1.6rem
+  margin-left: .3rem
+  position: relative
+.item__check-btn
+  background-color: rgba(0,0,0, .3)
+  display: block
+  border: none
+  cursor: pointer
+  position: absolute
+  font-weight: bold
+  left: 95%  
+  bottom: 0
+.check-btn__span
+  color: white
+  text-transform: uppercase
+  font-family: 'ff-good-headline-web-pro-ext', sans-serif
+  font-size: 1.4rem
+  line-height: 1.3rem
+  letter-spacing: 1px
+  transition: font-size .2s
+  &:hover
+    font-size: 1.6rem
+.about__mission
+  background-color: #FFF2DD
+  width: 50%
+  height: auto
+  padding: 1.5rem 2rem 1rem 2rem
+  display: flex
+  justify-content: space-between
+  position: relative
+  margin: 6rem auto 
+.mission__paragraph
+  flex-basis: 50%
+  font-family: "sofia-pro", sans-serif
+  font-weight: normal
+  font-size: .875rem
+  color: #455251
+  opacity: .5
+  text-align: right
+  line-height: 1.07rem
+  border-right: 2px solid #333D3C
+  padding-right: 1rem
+.mission__list
+  flex-basis: 50%
+  align-self: center
+  list-style: none
+.mission__item
+  margin: 0 0 0 1rem
+.item__link
+  font-family: 'ff-good-headline-web-pro-ext', sans-serif
+  text-decoration: none
+  font-weight: bold
+  color: #333D3C
+  font-size: 1.5rem
+  text-transform: uppercase
+  letter-spacing: 1px
+  transition: font-size  .3s
+  &:hover
+    font-size: 2.5rem
+    letter-spacing: 3px
+.item__span
+  margin-right: .9rem  
+.mission__right-arrow
+  position: absolute  
+  top: calc(50% - 16px)
+  right: 0
+  margin-right: 2rem
+.right-arrow
+  background-image: url("../assets/img/about/right-arrow.png")  
+  width: 32px
+  height: 32px
+  display: block
+  opacity: .3
+.decoration
+  position: absolute
+  &:nth-child(1)  
+    background-image: url("../assets/img/about/mid1.png")
+    top: 23%
+    left: 41%
+    width: 20px
+    height: 20px
+  &:nth-child(2)  
+    background-image: url("../assets/img/about/mid2.png")
+    top: 17%
+    left: 15%
+    width: 61px
+    height: 61px
+  &:nth-child(3)  
+    background-image: url("../assets/img/about/mid3.png")
+    bottom: -10%
+    left: -3%
+    width: 252px
+    height: 315px
+  &:nth-child(4)  
+    background-image: url("../assets/img/about/mid4.png")
+    bottom: -5%
+    right: 35%
+    width: 50px
+    height: 60px
+
+@media (min-width: 1281px) and (max-width: 1366px)
+  .about
+    padding: 1rem 2rem
+  .about__grid
+    grid-column-gap: 9rem
+  .paragraph__list
+    grid-row-start: 3
+    grid-row-end: 3
+    grid-column-start: 1
+    grid-column-end: 1
+    margin-left: 3.5rem 
+  .grid__paragraph
+    font-size: .75rem
+  .paragraph__list
+    display: flex
+    flex-direction: column
+    margin-top: 1rem
+  .list__item
+    width: 35vw
+  .about__mission
+    width: 70%
+    background: rgb(255,218,22)
+    background: linear-gradient(51deg, rgba(255,218,225,1) 0%, rgba(243,215,201,1) 19%, rgba(255,242,221,.9) 95%)
+  .decoration
+    &:nth-child(3)  
+      background-image: url("../assets/img/about/mid3.png")
+      bottom: -10%
+      left: -5%
+      width: 252px
+      height: 315px
+   
+@media (min-width: 1025px) and (max-width: 1280px)
+  .about
+    padding: 1rem
+  .about__grid
+    grid-row-gap: 2rem
+    grid-column-gap: 8rem
+  .paragraph__list
+    grid-row-start: 3
+    grid-row-end: 3
+    grid-column-start: 1
+    grid-column-end: 1
+    margin-left: 2.5rem 
+  .paragraph__list
+    display: flex
+    flex-direction: column
+  .list__item
+    width: 40vw
+  .item__check-btn
+    right: 0
+  .about__mission
+    width: 70%
+    background: rgb(255,218,22)
+    background: linear-gradient(61deg, rgba(255,218,225,1) 0%, rgba(243,215,201,1) 19%, rgba(255,242,221,.9) 95%)
+  .decoration
+    &:nth-child(3)  
+      bottom: -10%
+      left: -5%
+
+@media (max-width: 1024px) 
+  .about__grid
+    grid-column-gap: 9rem
+    grid-template-columns: 35% 35%
+  .paragraph__list
+    grid-row-start: 3
+    grid-row-end: 3
+    grid-column-start: 1
+    grid-column-end: 1
+    margin-left: 4rem 
+    margin-top: 1rem
+  .list__item
+    width: 45vw
+  .about__mission
+    width: 75%
+    background: rgb(255,218,22)
+    background: linear-gradient(167deg, rgba(255,218,225,1) 0%, rgba(243,215,201,1) 19%, rgba(255,242,221,.9) 95%)
+  .decoration
+    &:nth-child(3)  
+      bottom: -15%
+      left: -6%
+      z-index: -1
+@media (min-width: 768px) and (max-width: 823px) and (orientation: landscape)
+  .about
+    margin-top: 2rem
+  .about__grid
+    grid-column-gap: 7rem
+    grid-template-columns: 35% 35%
+  .grid__logo,.grid__logo2
+    transform: scale(.9)
+  .paragraph__list
+    grid-row-start: 3
+    grid-row-end: 3
+    grid-column-start: 1
+    grid-column-end: 1
+    margin-left: 5rem 
+    margin-top: 0rem
+  .grid__paragraph
+    font-size: 0.8rem
+  .list__item
+    width: 55vw
+  .about__mission
+    width: 80%
+    margin-top: 4rem
+    margin-bottom: 4rem
+    background: rgb(255,218,22)
+    background: linear-gradient(3deg, rgba(255,218,225,1) 0%, rgba(243,215,201,1) 19%, rgba(255,242,221,.9) 95%)
+  .mission__paragraph
+    font-size: .8rem
+  .decoration
+    &:nth-child(3)  
+      bottom: -15%
+      left: -6%
+      z-index: -1
+  .grid__link--after
+    &::after
+      top: -5% 
+      left: 100%
+
+@media (min-width: 768px) and (orientation: portrait)
+  .about__grid
+    grid-row-gap: 2rem
+    grid-column-gap: 11rem
+  .paragraph__list
+    grid-row-start: 3
+    grid-row-end: 3
+    grid-column-start: 1
+    grid-column-end: 1
+    margin-left: 2.5rem 
+  .list__item
+    width: 55vw
+  .about__mission
+    width: 80%
+    background: rgb(255,218,22)
+    background: linear-gradient(209deg, rgba(255,218,225,1) 0%, rgba(243,215,201,1) 19%, rgba(255,242,221,.9) 95%)
+  .decoration
+    &:nth-child(3)  
+      bottom: -15%
+      left: -6%
+      z-index: -1
+      transform: scale(.9)
+    &:nth-child(4)  
+      bottom: 0%
+      right: 26%
+  .grid__link--after
+    &::after
+      top: -5% 
+      left: 100%
+@media (min-width: 668px) and (max-width: 767px) and (orientation: landscape)
+  .about__grid
+    grid-template-columns: 45% 
+    grid-column-gap: 4rem
+    margin: 0 2rem
+  .grid__logo,.grid__logo2
+    transform: scale(.9)
+  .list__item
+    padding-left: 1.5rem
+    margin-left: 1.5rem
+    margin-top: 1rem
+    width: 60vw
+  .about__mission
+    width: 80%
+    padding: 1rem
+    margin-top: 3.5rem
+    background: rgb(255,218,22)
+    background: linear-gradient(183deg, rgba(255,218,225,1) 0%, rgba(243,215,201,1) 19%, rgba(255,242,221,.9) 95%)
+  .mission__paragraph
+    font-size: .8rem 
+  .decoration
+    &:nth-child(3)  
+      left: -16%
+      transform: scale(.7)
+    &:nth-child(4)  
+      bottom: 0%
+      right: 26%
+@media (min-width: 568px) and (max-width:667px) and (orientation: landscape)
+  .about__grid
+    grid-template-columns: 45% 
+    grid-column-gap: 1.5rem
+    margin: 0 2rem
+  .grid__logo,.grid__logo2
+    transform: scale(.7)
+  .grid__link
+    margin-left: 0
+  .grid__paragraph
+    font-size: .75rem
+  .paragraph__list
+    margin-top: -2rem
+  .list__item
+    padding-left: 2rem
+    margin-left: -1.5rem
+    margin-top: 0
+    width: 70vw
+  .item__duty
+    font-size: .9rem
+  .item__person  
+    font-size: 1.3rem
+  .check-btn__span
+    font-size: 1.2rem  
+  .about__mission
+    width: 85%
+    padding: .5rem
+    margin-top: 2.5rem
+    margin-bottom: 3.5rem
+    background: rgb(255,218,22)
+    background: linear-gradient(218deg, rgba(255,218,225,1) 0%, rgba(243,215,201,1) 19%, rgba(255,242,221,.9) 95%)
+  .mission__paragraph
+    font-size: .75rem 
+  .decoration
+    transform: scale(.7)
+    &:nth-child(3)  
+      left: -16%
+      transform: scale(.7)
+    &:nth-child(4)  
+      bottom: 0%
+
+@media (min-width: 375px) and (max-width: 414px) and (orientation: portrait) 
+  .about
+    margin-top: 0
+  .about__grid
+    margin: 0 2rem
+    display: flex
+    flex-direction: column
+    align-items: center
+  .grid__logo,.grid__logo2
+    transform: scale(.85)
+    margin: 1rem 0
+  .grid__link
+    margin-left: 0
+  .grid__paragraph
+    font-size: .85rem
+    text-align: justify
+  .paragraph__list
+    margin-top: 2rem
+    margin-left: 0
+    height: 35vh
+    width: 100%
+  .list__item
+    margin-right: 0
+    padding-right: 0
+    margin-top: 0
+    margin: 0 auto
+    width: 95%
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    &:nth-child(1)
+      margin-bottom: 5rem
+  .item__separator
+    display: none
+  .item__duty
+    font-size: 1.1rem
+    padding-right: 1.5rem
+    margin-bottom: .5rem
+    align-self: flex-start
+  .item__person  
+    font-size: 1.6rem
+    margin-left: 0
+    padding-right: 1.5rem
+    align-self: flex-start
+  .item__check-btn
+    left: 0%
+    bottom: -60%
+  .check-btn__span
+    font-size: 1.6rem  
+  .about__mission
+    width: 80%
+    padding: 0
+    margin-top: 1.5rem
+    margin-bottom: 4rem
+    display: flex
+    flex-direction: column
+    background: rgb(255,218,22)
+    background: linear-gradient(331deg, rgba(255,218,225,1) 0%, rgba(243,215,201,1) 19%, rgba(255,242,221,.9) 100%)
+  .mission__paragraph
+    font-size: .85rem 
+    border: none
+    text-align: justify
+    padding: 1rem
+  .mission__list
+    display: flex
+    padding-left: 0
+    justify-content: space-around
+    width: 80%
+  .mission__item
+    margin-left: 0
+  .item__link
+    text-align: left
+  .item__span
+    margin-right: .5rem
+  .mission__right-arrow
+    display: block
+    margin-right: 0
+    position: relative
+    left: calc(50% - 16px)
+    width: 32px
+    margin-bottom: 1rem
+  .decoration
+    z-index: -1
+    transform: scale(.7)
+    &:nth-child(3)  
+      left: -16%
+      transform: scale(.7)
+    &:nth-child(2)  
+      transform: scale(.5)
+      opacity: .4
+      left: 0
+    &:nth-child(1)  
+      top: 13%
+    &:nth-child(4)  
+      bottom: 5%
+      right: 5%
+      z-index: 1
+  .grid__link--after
+    &::after
+      top: -5% 
+      left: 100%
+
+@media (min-width: 320px) and (max-width: 360px) and (orientation: portrait)
+  .about
+    margin-top: 0
+  .about__grid
+    margin: 0 2rem
+    display: flex
+    flex-direction: column
+    align-items: center
+  .grid__logo,.grid__logo2
+    transform: scale(.85)
+    margin: 1rem 0
+  .grid__link
+    margin-left: 0
+  .grid__paragraph
+    font-size: .75rem
+    text-align: justify
+  .paragraph__list
+    margin-top: 2rem
+    margin-left: 0
+    height: 35vh
+  .list__item
+    margin-right: 0
+    padding-right: 0
+    margin-top: 0
+    margin: 0 auto
+    width: 90%
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    &:nth-child(1)
+      margin-bottom: 5rem
+  .item__separator
+    display: none
+  .item__duty
+    font-size: 1rem
+    padding-right: 1.5rem
+    margin-bottom: .5rem
+    align-self: flex-start
+  .item__person  
+    font-size: 1.45rem
+    margin-left: 0
+    padding-right: 1.5rem
+    align-self: flex-start
+  .item__check-btn
+    left: 0%
+    bottom: -60%
+  .check-btn__span
+    font-size: 1.5rem  
+  .about__mission
+    width: 80%
+    padding: 0
+    margin-top: 1.5rem
+    margin-bottom: 4rem
+    display: flex
+    flex-direction: column
+    background: rgb(255,218,22)
+    background: linear-gradient(331deg, rgba(255,218,225,1) 0%, rgba(243,215,201,1) 19%, rgba(255,242,221,.9) 100%)
+  .mission__paragraph
+    font-size: .75rem 
+    border: none
+    text-align: justify
+    padding: 1rem
+  .mission__list
+    display: flex
+    padding-left: 0
+    justify-content: space-around
+    width: 80%
+  .mission__item
+    margin-left: 0
+  .item__link
+    text-align: left
+  .item__span
+    margin-right: .5rem
+  .mission__right-arrow
+    display: block
+    margin-right: 0
+    position: relative
+    left: calc(50% - 16px)
+    width: 32px
+    margin-bottom: 1rem
+  .decoration
+    z-index: -1
+    transform: scale(.7)
+    &:nth-child(3)  
+      left: -16%
+      transform: scale(.7)
+    &:nth-child(2)  
+      transform: scale(.5)
+      opacity: .4
+      left: 0
+    &:nth-child(1)  
+      top: 13%
+    &:nth-child(4)  
+      bottom: 5%
+      right: 5%
+      z-index: 1
+  .grid__link--after
+    &::after
+      top: -5% 
+      left: 100%
+      
+
+
+
+
+      
+ 
+
+
+
+  
+      
+
+
+
+      
+      
+
+
+
+

@@ -1,0 +1,31 @@
+html
+  scroll-behavior: smooth
+body 
+  animation: fadeInAnimation ease 3.5s 
+  animation-iteration-count: 1; 
+  animation-fill-mode: forwards; 
+
+@keyframes fadeInAnimation
+    0% 
+      opacity: 0; 
+    
+    100% 
+      opacity: 1; 
+     
+.main
+  width: 100%
+  padding: 3rem 3rem
+  overflow: hidden
+@media (max-width: 1024px) 
+  .main
+    width: 100%
+    padding: 3rem 0
+    
+
+@media (min-width: 768px) and (orientation: portrait)
+  .main
+    padding: 3rem 0rem
+@media (min-width: 481px) and (max-width: 767px) and (orientation: landscape)
+  .main
+    padding: 3rem 0rem
+    

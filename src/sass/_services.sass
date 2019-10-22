@@ -1,0 +1,515 @@
+.services
+  width: 100%
+  height: 80vh
+  margin-top: 9rem
+  position: relative
+.services__realizations
+  width: 34vw
+  height: 19vw
+  padding: 2rem
+  background-color: rgba(255, 242, 221, .6)
+  position: absolute
+  left: 17%
+  top: 10%
+  transition: 1.5s
+  opacity: 0
+  transform: translateX(-100%)
+.realizations__h3
+  @include services__h3
+  color: #333D3C
+  margin-top: 2rem
+  margin-bottom: 1.4rem
+  &::after
+    content: "03"
+    position: absolute
+    top: 14%
+    right: 32%
+    font-size: 1.1rem
+    color: #868782
+    font-weight: bold
+    letter-spacing: 1px
+.realizations__paragraph
+  @include services__paragraph
+  color: #868782
+  width: 30%
+  margin: 0 auto 3rem auto
+.realizations__btn
+  @include services__btn
+  background-color: #BAB8AC
+  color: white
+.services__offer
+  width: 29vw
+  height: 16vw
+  background-color: #86857D
+  position: absolute
+  right: 19%
+  bottom: 15%
+  transform: translateX(110%)
+  opacity: 0
+  transition: 1.5s
+.active
+  opacity: 1
+  transform: translateX(0)
+.offer__h3
+  @include services__h3
+  color: white
+  margin-top: 1.5rem
+  margin-bottom: 1.4rem
+  padding-top: 2rem
+  &::after
+    content: "04"
+    position: absolute
+    top: 45%
+    right: 38%
+    font-size: 1.1rem
+    color: #BAB8AC
+    font-weight: bold
+    letter-spacing: 1px
+.offer__paragraph
+  @include services__paragraph
+  color: white
+  width: 50%
+  margin: 0 auto 2rem auto
+.offer__btn
+  @include services__btn 
+  background-color: #CBF2F0
+  color: #333D3C
+.object
+  position: absolute
+  &:nth-child(1)
+    background-image: url("../assets/img/servicesBgI/services2.png")
+    width: 36px
+    height: 36px
+    bottom: 50%
+    left: 10%
+  &:nth-child(2)
+    background-image: url("../assets/img/servicesBgI/services4.png")
+    width: 101px
+    height: 87px
+    bottom: 35%
+    left: 25%
+  &:nth-child(3)
+    background-image: url("../assets/img/servicesBgI/services1.png")
+    width: 50px
+    height: 49px
+    top: 25%
+    right: 20%
+  &:nth-child(4)
+    background-image: url("../assets/img/servicesBgI/services3.png")
+    width: 19px
+    height: 19px
+    bottom: 25%
+    right: 10%
+
+@media (min-width: 1281px) and (max-width: 1366px)
+  .services__realizations
+    width: 42vw
+    height: 24vw
+    padding: 1rem 4rem 4rem 4rem
+    left: 11%
+    top: 10%
+  .realizations__paragraph
+    width: 50%
+  .services__offer
+    width: 36vw
+    height: 22vw
+    padding: 1.5rem
+    right: 18%
+    bottom: 15%
+  .offer__h3
+    margin-top: .5rem
+    margin-bottom: 1rem
+    padding-top: 0
+  .offer__paragraph
+    width: 75%
+  .realizations__h3
+    &::after
+      top: 10%
+      right: 5%
+  .offer__h3
+    &::after
+      top: 10%
+      left: 70%
+  
+@media (min-width: 1025px) and (max-width: 1280px) 
+  .services__realizations
+    width: 40vw
+    height: 23vw
+    padding: 0 4rem 4rem 4rem
+    left: 13%
+    top: 11%
+  .realizations__paragraph
+    width: 55%
+    margin-bottom: 2rem
+  .services__offer
+    width: 35vw
+    height: 21vw
+    padding: 1rem
+    right: 19%
+    bottom: 19%
+  .offer__h3
+    margin-top: .2rem
+    margin-bottom: 1rem
+    padding-top: 0
+  .offer__paragraph
+    width: 70%
+    margin: 0 auto 2rem auto
+  .realizations__h3
+    &::after
+      top: 10%
+      right: 15%
+  .offer__h3
+    &::after
+      top: 10%
+      left: 70%
+
+@media (max-width: 1024px)
+  .services__realizations
+    width: 42vw
+    height: 24vw
+    padding: 1rem 3rem 3rem 3rem
+    left: 11%
+    top: 10%
+  .realizations__paragraph
+    width: 60%
+    margin-bottom: 1rem
+  .realizations__h3
+    margin-top: 1rem
+  .services__offer
+    width: 36vw
+    height: 23vw
+    padding: 1rem
+    right: 18%
+    bottom: 15%
+  .offer__h3
+    margin-top: .4rem
+    margin-bottom: 1rem
+    padding-top: 0
+  .offer__paragraph
+    margin-bottom: 1.5rem
+    width: 80%
+  .realizations__h3
+    &::after
+      top: 10%
+      right: 15%
+  .offer__h3
+    &::after
+      top: 10%
+      left: 70%
+
+@media (min-width: 768px) and (max-width: 823px) and (orientation: landscape)
+  .services
+    margin-top: 4rem
+    margin-bottom: 3rem
+    height: 85vh
+  .services__realizations
+    width: 47vw
+    height: 28vw
+    left: 5%
+  .realizations__h3
+    font-size: 2.5rem
+    margin-bottom: 1rem
+    margin-top: .5rem
+  .realizations__paragraph
+    width: 70%
+    font-size: .9rem
+  .services__offer
+    width: 41vw
+    height: 28vw
+    right: 9%
+    bottom: 10%
+  .offer__h3
+    font-size: 2.5rem
+    margin-top: .5rem
+    padding-top: 0
+  .offer__paragraph
+    font-size: .9rem
+  .realizations__btn
+    font-size: 1.3rem
+  .offer__btn
+    font-size: 1.3rem
+  .object
+    transform: scale(.7)
+    &:nth-child(2)
+      bottom: -4%
+      left: 26%
+    &:nth-child(3)
+      top: 20%
+      right: 13%
+  .realizations__h3
+    &::after
+      top: 10%
+      right: 10%
+  .offer__h3
+    &::after
+      top: 10%
+      left: 70%
+
+
+@media (min-width: 768px) and (orientation: portrait)
+  .services
+    margin-top: 5rem
+    margin-bottom: 4rem
+    height: 65vh
+  .services__realizations
+    width: 53vw
+    height: 32vw
+    padding: 1rem
+    left: 11%
+    top: 8%
+  .realizations__h3
+    margin-bottom: 2rem
+  .realizations__paragraph
+    width: 55%
+    margin-bottom: 1rem
+  .services__offer
+    width: 47vw
+    height: 32vw
+    padding: 1rem
+    right: 18%
+    bottom: 10%
+  .offer__h3
+    margin-top: 1rem
+    margin-bottom: 1.5rem
+    padding-top: 0
+  .offer__paragraph
+    margin-bottom: 1.9rem
+    width: 75%
+  .object
+    position: absolute
+    &:nth-child(2)
+      bottom: -4%
+      left: 13%
+  .realizations__h3
+    &::after
+      top: 10%
+      right: 17%
+  .offer__h3
+    &::after
+      top: 10%
+      left: 70%
+
+@media (min-width: 668px) and (max-width: 767px) and (orientation: landscape)
+  .services
+    margin-top: 4rem
+    margin-bottom: 3rem
+    height: 85vh
+  .services__realizations
+    width: 50vw
+    height: 30vw
+    left: 5%
+    top: 8%
+  .realizations__h3
+    font-size: 2.5rem
+    margin-bottom: 1rem
+    margin-top: .5rem
+  .realizations__paragraph
+    width: 55%
+    margin-bottom: 1rem
+    font-size: .9rem
+  .services__offer
+    width: 43vw
+    height: 31vw
+    right: 7%
+    bottom: 10%
+  .offer__h3
+    font-size: 2.5rem
+    margin-top: .5rem
+    padding-top: 0
+  .offer__paragraph
+    font-size: .9rem
+  .realizations__btn
+    font-size: 1.3rem
+  .offer__btn
+    font-size: 1.3rem
+  .object
+    transform: scale(.7)
+    &:nth-child(2)
+      bottom: -4%
+      left: 26%
+    &:nth-child(3)
+      top: 20%
+      right: 13%
+  .realizations__h3
+    &::after
+      top: 10%
+      right: 5%
+  .offer__h3
+    &::after
+      top: 10%
+      left: 70%
+
+@media (min-width: 568px) and (max-width:667px) and (orientation: landscape)
+  .services
+    margin-top: 8rem
+    margin-bottom: 2rem
+    height: 100vh
+  .services__realizations
+    width: 55vw
+    height: 33vw
+    left: 3%
+    top: 8%
+  .realizations__h3
+    font-size: 2.1rem
+    margin-bottom: 1rem
+    margin-top: .5rem
+  .realizations__paragraph
+    width: 75%
+    margin-bottom: 1rem
+    font-size: .8rem
+  .services__offer
+    width: 47vw
+    height: 31vw
+    right: 4%
+    bottom: 10%
+  .offer__h3
+    font-size: 2.1rem
+    margin-top: 0rem
+    margin-bottom: 1rem
+    padding-top: 0
+  .offer__paragraph
+    font-size: .8rem
+    width: 90%
+    margin-bottom: 0.5rem
+  .realizations__btn
+    font-size: 1.1rem
+  .offer__btn
+    font-size: 1.1rem
+  .object
+    transform: scale(.6)
+    &:nth-child(2)
+      bottom: -4%
+      left: 26%
+    &:nth-child(3)
+      top: 20%
+      right: 13%
+  .realizations__h3
+    &::after
+      top: 10%
+      right: 5%
+  .offer__h3
+    &::after
+      top: 10%
+      left: 70%
+
+@media (min-width: 375px) and (max-width: 414px) and (orientation: portrait) 
+  .services
+    margin-top: 0rem
+    margin-bottom: 2rem
+    height: 100vh
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: space-around
+  .services__realizations
+    width: 94vw
+    height: 64vw
+    position: static
+  .realizations__h3
+    font-size: 2.5rem
+    margin-bottom: 1rem
+    margin-top: .5rem
+  .realizations__paragraph
+    width: 75%
+    margin-bottom: 1rem
+    font-size: .9rem
+  .services__offer
+    width: 83vw
+    height: 60vw
+    position: static
+  .offer__h3
+    font-size: 2.5rem
+    margin-bottom: 1rem
+  .offer__paragraph
+    font-size: .9rem
+    width: 90%
+    margin-bottom: 1rem
+  .realizations__btn
+    font-size: 1.2rem
+  .offer__btn
+    font-size: 1.2rem
+  .object
+    transform: scale(.6)
+    &:nth-child(2)
+      bottom: -4%
+      left: 26%
+    &:nth-child(3)
+      top: 20%
+      right: 13%  
+  .realizations__h3
+    &::after
+      top: 10%
+      right: 5%
+  .offer__h3
+    &::after
+      top: 10%
+      left: 70%
+
+@media (min-width: 320px) and (max-width: 360px) and (orientation: portrait)
+  .services
+    margin-top: 0rem
+    margin-bottom: 2rem
+    height: 100vh
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: space-around
+  .services__realizations
+    width: 90vw
+    height: 65vw
+    position: static
+  .realizations__h3
+    font-size: 2.1rem
+    margin-bottom: 1rem
+    margin-top: .5rem
+  .realizations__paragraph
+    width: 75%
+    margin-bottom: 1rem
+    font-size: .8rem
+  .services__offer
+    width: 80vw
+    height: 60vw
+    position: static
+  .offer__h3
+    font-size: 2.1rem
+    margin-bottom: 1rem
+  .offer__paragraph
+    font-size: .8rem
+    width: 90%
+    margin-bottom: 1rem
+  .realizations__btn
+    font-size: 1.1rem
+  .offer__btn
+    font-size: 1.1rem
+  .object
+    transform: scale(.6)
+    &:nth-child(2)
+      bottom: -4%
+      left: 26%
+    &:nth-child(3)
+      top: 20%
+      right: 13%
+  .realizations__h3
+    &::after
+      top: 10%
+      right: 5%
+  .offer__h3
+    &::after
+      top: 10%
+      left: 70%
+
+    
+    
+
+
+
+ 
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,716 @@
+.header
+  height: 100vh
+  width: 100%
+  padding: 3rem 3rem
+.upper
+  display: flex
+  flex-direction: row 
+  justify-content: space-between
+.upper__logo
+  transition: .2s
+  &:hover
+    transform: scale(1.2)
+.upper__socials
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  width: 50px
+  height: 17px
+  padding: 0
+  list-style-type: none
+.socials__item
+  opacity: .7
+.socials__link
+  width: 17px
+  height: 17px
+  display: block
+.socials__item--insta
+  background: url("../assets/img/header/instagram.png")
+.socials__item--fb
+  background: url("../assets/img/header/fb.png")
+.upper__switches
+  font-family: 'ff-good-headline-web-pro-ext', sans-serif
+.upper__switch
+  text-transform: uppercase
+  text-decoration: none
+  font-weight: bold
+  font-size: 1.125rem
+  letter-spacing: 1px
+  color: #333D3C
+  transition: .1s
+  &:nth-of-type(1)
+    margin-right: .5rem
+.upper__switch--js
+  border-bottom: 2px solid #333D3C
+.header__container
+  width: 100%
+  height: auto
+  display: flex
+  flex-direction: column
+  align-items: center
+  margin-top: 4rem
+  position: relative
+  font-family: 'ff-good-headline-web-pro-ext', sans-serif
+.header__paragraph
+  font-size: 1.5rem
+  text-transform: uppercase
+  color: #586967
+  letter-spacing: 2px
+  font-weight: normal
+  margin: 0 0 -.6rem 0
+.header__h1
+  font-size: 5rem  
+  text-transform: uppercase
+  color: #333D3C
+  letter-spacing: 4px
+  font-weight: bold
+  margin: 2rem 0 1rem 0
+.header__btn
+  color: white
+  border: 2px solid white
+  background-color: transparent
+  padding: .2rem 1rem
+  text-transform: uppercase
+  letter-spacing: 1px
+  margin: 0
+  font-size: 1.5rem
+  cursor: pointer
+  transition: .2s linear
+  z-index: 2
+  &:hover
+    color: white
+    background-color: rgba(51, 61, 60, 0.7)
+    border-color: transparent
+    transform: scale(1.1)
+.header__anchor
+  display: block
+  margin-top: 10rem
+  text-transform: uppercase
+  color: #333D3C
+  font-weight: bold
+  letter-spacing: 1px
+  font-size: 1.125rem
+  text-decoration: none
+  &::before
+    content: ""
+    background-image: url("../assets/img/header/span-tło.png")
+    transform: scale(0.8)
+    width: 769px
+    height: 636px
+    display: block
+    position: absolute
+    top: 0
+    left: calc(50% - 350px)
+    z-index: -1
+  &::after
+    content: ""
+    background-image: url("../assets/img/header/cien.png")
+    transform: scale(0.9)
+    opacity: .5
+    width: 572px
+    height: 367px
+    display: block
+    position: absolute
+    bottom: -90%
+    left: calc(50% - 293px)
+    z-index: -2
+.header__span
+  background-image: url("../assets/img/header/arrow-down.png")
+  width: 24px
+  height: 24px
+  position: absolute
+  bottom: -25%
+  left: calc(50% - 12px)
+  opacity: .7
+  transform: scale(1.1)
+.side-btn 
+  padding: 5px 0 5px 5px
+  display: inline-block
+  cursor: pointer
+  background-color: transparent
+  border: 0
+  margin: 0
+  position: fixed
+  right: 0
+  top: 35%
+  z-index: 999
+.side-btn__box
+  width: 50px
+  height: 36px
+  background-color: black
+  opacity: .7
+  display: inline-block
+  position: relative
+.box__inner
+  width: 25px
+  height: 2px
+  background-color: white
+  position: absolute
+  left: calc(50% - 12.5px)
+  &:nth-of-type(1)
+    top: 10px
+  &:nth-of-type(2)
+    top: 50%
+    transform: translateY(-50%)
+  &:nth-of-type(3)
+    bottom:  10px
+
+.bubble
+  position: absolute
+  &:nth-child(1)
+    background-image: url("../assets/img/header/bbl-up.png")
+    top: 0
+    left: 35%
+    width: 152px
+    height: 76px
+  &:nth-child(2)
+    background-image: url("../assets/img/header/up-left.png")
+    top: 4%
+    left: 34%
+    width: 30px
+    height: 30px
+  &:nth-child(3)
+    background-image: url("../assets/img/header/up-down-1.png")
+    top: 15%
+    left: 25%
+    width: 83px
+    height: 67px
+  &:nth-child(4)
+    background-image: url("../assets/img/header/up-down-2.png")
+    top: 20%
+    left: 28%
+    width: 30px
+    height: 30px
+  &:nth-child(5)
+    background-image: url("../assets/img/header/up-down3.png")
+    top: 25%
+    left: 29%
+    width: 36px
+    height: 36px
+  &:nth-child(6)
+    background-image: url("../assets/img/header/up-down4.png")
+    top: 20%
+    left: 45%
+    width: 164px
+    height: 133px
+    z-index: -1
+  &:nth-child(7)
+    background-image: url("../assets/img/header/up-down5.png")
+    top: 30%
+    left: 41.5%
+    width: 30px
+    height: 30px
+  &:nth-child(8)
+    background-image: url("../assets/img/header/up-down6.png")
+    top: 36%
+    left: 37%
+    width: 59px
+    height: 59px
+  &:nth-child(9)
+    background-image: url("../assets/img/header/up-down7.png")
+    top: 43%
+    right: 32%
+    width: 30px
+    height: 30px
+  &:nth-child(10)
+    background-image: url("../assets/img/header/up-down8.png")
+    top: 47%
+    right: 40%
+    width: 89px
+    height: 73px
+  &:nth-child(11)
+    background-image: url("../assets/img/header/up-down9.png")
+    bottom: 25%
+    right: 34%
+    width: 77px
+    height: 74px
+  &:nth-child(12)
+    background-image: url("../assets/img/header/up-down10.png")
+    bottom: 25%
+    left: 45%
+    width: 20px
+    height: 20px
+  &:nth-child(13)
+    background-image: url("../assets/img/header/up-down11.png")
+    bottom: 15%
+    left: 0
+    width: 246px
+    height: 232px
+  &:nth-child(14)
+    background-image: url("../assets/img/header/up-down12.png")
+    bottom: 25%
+    left: 8%
+    width: 61px
+    height: 61px
+  &:nth-child(15)
+    background-image: url("../assets/img/header/up-down10.png")
+    bottom: 5%
+    left: 25%
+    width: 20px
+    height: 20px
+  &:nth-child(16)
+    background-image: url("../assets/img/header/up-down4.png")
+    bottom: 35%
+    right: 5%
+    width: 164px
+    height: 133px
+
+@media (min-width: 1025px) and (max-width: 1280px)
+  .header
+    padding: 1.5rem 3rem
+
+@media (max-width: 1024px) and (orientation: landscape)
+  .header
+    padding: .7rem 3rem
+  .header__container
+    margin-top: 3rem
+  .header__span
+    &::before
+      content: ""
+      transform: scale(.8)
+  .side-btn 
+    top: calc(50% - 18px)
+  .bubble
+    &:nth-child(1)
+      background-image: url("../assets/img/header/bbl-up.png")
+      top: -1%
+      left: 35%
+      width: 152px
+      height: 76px
+    &:nth-child(5)
+      z-index: -1
+    &:nth-child(13)
+      background-image: url("../assets/img/header/up-down11.png")
+      bottom: 15%
+      left: -2%
+      width: 246px
+      height: 232px
+      transform: scale(.9)
+    &:nth-child(16)
+      background-image: url("../assets/img/header/up-down4.png")
+      bottom: 35%
+      right: 5%
+      width: 164px
+      height: 133px
+      transform: scale(.9)
+
+@media (min-width: 768px) and (max-width: 823px) and (orientation: landscape)
+  .upper
+    align-items: center
+  .header
+    padding: .5rem 2rem
+  .upper__socials  
+    width: 65px
+  .upper__switches
+    margin-right: 3rem
+  .upper__switch
+    padding: .7rem
+  .side-btn 
+    top: .5%
+    right: 0%
+    transform: scale(1.1)
+    padding: 0
+    overflow: hidden
+  .header__container
+    margin-top: .5rem
+  .header__paragraph
+    font-size: 1.2rem
+  .header__h1
+    font-size: 4rem
+    margin-top: 1.5rem
+  .header__btn
+    transition: 0s
+    z-index: 1
+    &:hover
+      transform: scale(1)
+      color: white
+      background-color: transparent
+      border: 2px solid white
+  .header__anchor
+    margin-top: 1rem
+    &::before
+      top: -100%
+      transform: scale(.5)
+      opacity: .45
+    &::after
+      background-image: none
+  .header__span
+    bottom: -38%
+  .upper__logo
+    &:hover
+      transform: scale(1)
+  .bubble
+    &:nth-child(1)
+      display: none
+    &:nth-child(4)
+      display: none
+    &:nth-child(5)
+      display: none
+    &:nth-child(6)
+      display: none
+    &:nth-child(7)
+      display: none
+    &:nth-child(8)
+      display: none
+    &:nth-child(9)
+      top: 23%
+      right: 15%  
+    &:nth-child(10)
+      display: none
+    &:nth-child(11)
+      bottom: 26%
+      right: 20%
+    &:nth-child(12)
+      display: none
+    &:nth-child(13)
+      display: none
+    &:nth-child(16)
+      bottom: 5%
+      right: 0%
+ 
+@media (min-width: 768px) and (orientation: portrait)
+  .header
+    padding: 3rem 2rem
+  .side-btn 
+    top: calc(50% - 18px)
+  .header__container
+    margin-top: 6rem
+  .bubble
+    &:nth-child(5)
+      z-index: -1
+    &:nth-child(13)
+      bottom: 10%
+      left: -5%
+      transform: scale(.7)
+    &:nth-child(16)
+      bottom: 5%
+      right: 5%
+      width: 164px
+      height: 133px
+      transform: scale(.9)
+
+@media (min-width: 668px) and (max-width: 767px) and (orientation: landscape)
+  .upper
+    align-items: center
+  .header
+    padding: .5rem 2rem
+  .upper__socials  
+    width: 60px
+  .upper__switches
+    margin-right: 3rem
+  .upper__switch
+    padding: .7rem
+  .side-btn 
+    top: .5%
+    right: 0%
+    transform: scale(1.1)
+    padding: 0
+  .header__container
+    margin-top: 2rem
+  .header__paragraph
+    font-size: 1.2rem
+  .header__h1
+    font-size: 4rem
+  .header__btn
+    transition: 0s
+    &:hover
+      transform: scale(1)
+      color: white
+      background-color: transparent
+      border: 2px solid white
+  .header__anchor
+    text-decoration: none
+  .header__anchor
+    display: block
+    margin-top: 1rem
+    text-transform: uppercase
+    color: #333D3C
+    font-weight: bold
+    letter-spacing: 1px
+    font-size: 1.125rem
+    &::before
+      top: -120%
+      transform: scale(.5)
+      opacity: .45
+    &::after
+      background-image: none
+  .header__span
+    bottom: -35%
+  .upper__logo
+    &:hover
+      transform: scale(1)
+  .bubble
+    position: absolute
+    transform: scale(.6)
+    &:nth-child(1)
+      display: none
+    &:nth-child(4)
+      display: none
+    &:nth-child(5)
+      display: none
+    &:nth-child(6)
+      display: none
+    &:nth-child(7)
+      display: none
+    &:nth-child(8)
+      display: none
+    &:nth-child(9)
+      top: 23%
+      right: 15%
+    &:nth-child(10)
+      z-index: -1
+    &:nth-child(11)
+      display: none
+    &:nth-child(12)
+      display: none
+    &:nth-child(13)
+      display: none
+    &:nth-child(16)
+      bottom: 5%
+      right: 0%
+
+@media (min-width: 568px) and (max-width:667px) and (orientation: landscape)
+  .upper
+    align-items: center
+  .header
+    padding: 1rem 2rem
+    overflow: hidden
+  .upper__socials  
+    width: 60px
+  .upper__switches
+    margin-right: 3rem
+  .upper__switch
+    padding: .7rem
+  .side-btn 
+    top: .5%
+    right: 0%
+    transform: scale(1.1)
+    padding: 0
+  .header__container
+    margin-top: 1.5rem
+  .header__paragraph
+    font-size: 1.1rem
+  .header__h1
+    font-size: 3.5rem
+    margin-top: 1rem
+  .header__anchor
+    margin-top: 1rem
+    font-size: 1rem
+    &::before
+      top: -150%
+      transform: scale(.5)
+      opacity: .45
+    &::after
+      background-image: none
+  .header__span
+    bottom: -35%
+  .upper__logo
+    &:hover
+      transform: scale(1)
+  .bubble
+    position: absolute
+    transform: scale(.6)
+    &:nth-child(1)
+      display: none
+    &:nth-child(3)
+      display: none
+    &:nth-child(4)
+      display: none
+    &:nth-child(5)
+      display: none
+    &:nth-child(6)
+      display: none
+    &:nth-child(7)
+      display: none
+    &:nth-child(8)
+      display: none
+    &:nth-child(9)
+      top: 23%
+      right: 15%
+    &:nth-child(10)
+      display: none
+    &:nth-child(11)
+      bottom: 25%
+      right: 0%
+    &:nth-child(12)
+      display: none
+    &:nth-child(13)
+      display: none
+    &:nth-child(16)
+      display: none
+
+@media (min-width: 375px) and (max-width: 414px) and (orientation: portrait) 
+  .header
+    padding: .5rem 1rem
+    overflow: hidden
+  .upper__socials  
+    display: none
+  .upper__switches
+    display: none
+  .upper__switch
+    padding: .7rem
+    margin-top: 2rem
+  .side-btn 
+    top: 0
+    right: 0
+    transform: scale(1.1)
+    padding: 0
+  .header__container
+    margin-top: 7.5rem
+  .header__paragraph
+    font-size: 1.4rem
+    letter-spacing: 3px
+  .header__h1
+    font-size: 3.6rem
+    letter-spacing: 1px
+    margin-bottom: 1.7rem
+  .header__anchor
+    margin-top: 1rem
+    font-size: 1.3rem
+    &::before
+      top: -85%
+      transform: scale(.5)
+      opacity: .45
+    &::after
+      background-image: none
+  .header__span
+    bottom: -70%
+  .header__btn
+    margin-bottom: 1rem
+  .upper__logo
+    &:hover
+      transform: scale(1)
+  .bubble
+    position: absolute
+    transform: scale(.6)
+    &:nth-child(1)
+      display: none
+    &:nth-child(2)
+      display: none
+    &:nth-child(3)
+      display: none
+    &:nth-child(4)
+      display: none
+    &:nth-child(5)
+      display: none
+    &:nth-child(6)
+      display: none
+    &:nth-child(7)
+      display: none
+    &:nth-child(8)
+      display: none
+    &:nth-child(9)
+      top: 23%
+      right: 15%
+    &:nth-child(10)
+      display: none
+    &:nth-child(11)
+      bottom: 12%
+      right: 9%
+    &:nth-child(12)
+      display: none
+    &:nth-child(13)
+      display: none
+    &:nth-child(16)
+      display: none
+    &:nth-child(14)
+      bottom: 10%
+      left: 20% 
+
+@media (min-width: 320px) and (max-width: 360px) and (orientation: portrait)
+  .header
+    padding: .5rem 1rem
+    overflow: hidden
+  .upper__socials  
+    display: none
+  .upper__switches
+    display: none
+  .upper__switch
+    padding: .7rem
+    margin-top: 2rem
+  .side-btn 
+    top: 0
+    right: 0
+    transform: scale(1.1)
+    padding: 0
+  .header__container
+    margin-top: 5rem
+  .header__h1
+    font-size: 3rem
+    letter-spacing: 1px
+    margin-bottom: 1.7rem
+  .header__anchor
+    margin-top: 1rem
+    &::before
+      top: -85%
+      transform: scale(.5)
+      opacity: .45
+    &::after
+      background-image: none
+  .header__span
+    bottom: -95%
+  .header__btn
+    margin-bottom: 1rem
+  .upper__logo
+    &:hover
+      transform: scale(1)
+  .bubble
+    position: absolute
+    transform: scale(.6)
+    &:nth-child(1)
+      display: none
+    &:nth-child(2)
+      display: none
+    &:nth-child(3)
+      display: none
+    &:nth-child(4)
+      display: none
+    &:nth-child(5)
+      display: none
+    &:nth-child(6)
+      display: none
+    &:nth-child(7)
+      display: none
+    &:nth-child(8)
+      display: none
+    &:nth-child(9)
+      top: 23%
+      right: 15%
+    &:nth-child(10)
+      display: none
+    &:nth-child(11)
+      bottom: 12%
+      right: 9%
+    &:nth-child(12)
+      display: none
+    &:nth-child(13)
+      display: none
+    &:nth-child(16)
+      display: none
+    &:nth-child(14)
+      bottom: 10%
+      left: 20%
+
+
+     
+     
+
+
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,160 @@
+.sideMenu
+  width:  18vw
+  height: 100%
+  background: rgb(255,255,255)
+  background: linear-gradient(70deg, rgba(255,255,255,.4) 0%, rgba(238,224,201,.8) 72%, rgba(255,192,203,.5) 100%)
+  position: fixed
+  left: 0
+  top: 0
+  display: flex
+  flex-direction: column
+  justify-content: space-around
+  align-items: center
+  z-index: 1
+  border-right: 3px solid rgba(255,255,255,.8)
+  transform: translateX(-100%)
+  transition: .6s
+.active
+  transform: translatex(0)
+.sideMenu__list
+  height: 80vh
+  width: 15vw
+  display: flex
+  flex-direction: column
+  justify-content: space-around
+  padding-left: .2rem
+  list-style-type: none
+  padding-right: 1rem
+.sideMenu__item
+  background: rgb(255,255,255)
+  background: linear-gradient(70deg, rgba(255,255,255,.8) 34%, rgba(255,239,208,.6) 100%)
+  padding: .2rem 1rem
+  border-radius: 25px
+.sideMenu__link
+  font-family: 'ff-good-headline-web-pro-ext', sans-serif
+  text-decoration: none
+  text-transform: uppercase
+  color: #333d3c
+  letter-spacing: 2px
+  font-size: 1.5rem
+  font-weight: bold
+
+@media (min-width: 768px) and (max-width: 823px) and (orientation: landscape)
+  .sideMenu
+    width:  100vw
+    height: 100%
+    background: linear-gradient(70deg, rgba(255,255,255,1) 0%, rgba(238,224,201,1) 72%, rgba(255,192,203,1) 100%)
+    z-index: 2
+    border: none
+    transform: translateY(-100%)
+  .active
+    transform: translateY(0)
+  .sideMenu__list
+    width: 50vw
+  .sideMenu__item
+    border: 1px solid #333d3c
+    border-radius: 25px
+  .sideMenu__link
+    text-align: center
+    display: block
+@media (min-width: 768px) and (orientation: portrait)
+  .sideMenu
+    width:  100vw
+    height: 100%
+    background: linear-gradient(70deg, rgba(255,255,255,.9) 0%, rgba(238,224,201,.8) 72%, rgba(255,192,203,.8) 100%)
+    z-index: 3
+    border: none
+    transform: translateY(-100%)
+  .active
+    transform: translateY(0)
+  .sideMenu__list
+    width: 50vw
+  .sideMenu__item
+    border: 1px solid #333d3c
+    border-radius: 25px
+    padding: 1rem
+  .sideMenu__link
+    text-align: center
+    display: block
+@media (min-width: 668px) and (max-width: 767px) and (orientation: landscape)
+  .sideMenu
+    width:  100vw
+    height: 100%
+    background: linear-gradient(70deg, rgba(255,255,255,.9) 0%, rgba(238,224,201,.8) 72%, rgba(255,192,203,.8) 100%)
+    z-index: 3
+    border: none
+    transform: translateY(-100%)
+  .active
+    transform: translateY(0)
+  .sideMenu__list
+    width: 50vw
+  .sideMenu__item
+    border: 1px solid #333d3c
+    border-radius: 25px
+    padding: .6rem
+  .sideMenu__link
+    text-align: center
+    display: block
+@media (min-width: 568px) and (max-width:667px) and (orientation: landscape)
+  .sideMenu
+    width:  100vw
+    height: 100%
+    background: linear-gradient(70deg, rgba(255,255,255,.9) 0%, rgba(238,224,201,.8) 72%, rgba(255,192,203,.8) 100%)
+    z-index: 3
+    border: none
+    transform: translateY(-100%)
+  .active
+    transform: translateY(0)
+  .sideMenu__list
+    width: 50vw
+  .sideMenu__item
+    border: 1px solid #333d3c
+    border-radius: 25px
+    padding: .6rem
+  .sideMenu__link
+    text-align: center
+    display: block
+
+@media (min-width: 375px) and (max-width: 414px) and (orientation: portrait)
+  .sideMenu
+    width:  100vw
+    height: 100%
+    background: linear-gradient(70deg, rgba(255,255,255,.9) 0%, rgba(238,224,201,.8) 72%, rgba(255,192,203,.8) 100%)
+    z-index: 3
+    border: none
+    transform: translateY(-100%)
+  .active
+    transform: translateY(0)
+  .sideMenu__list
+    width: 65vw
+  .sideMenu__item
+    border: 1px solid #333d3c
+    border-radius: 25px
+    padding: .6rem
+  .sideMenu__link
+    text-align: center
+    display: block
+
+@media (min-width: 320px) and (max-width: 360px) and (orientation: portrait)
+  .sideMenu
+    width:  100vw
+    height: 100%
+    background: linear-gradient(70deg, rgba(255,255,255,.9) 0%, rgba(238,224,201,.8) 72%, rgba(255,192,203,.8) 100%)
+    z-index: 3
+    border: none
+    transform: translateY(-100%)
+  .active
+    transform: translateY(0)
+  .sideMenu__list
+    width: 70vw
+  .sideMenu__item
+    border: 1px solid #333d3c
+    border-radius: 25px
+    padding: .6rem
+  .sideMenu__link
+    text-align: center
+    display: block
+ 
+
+
+  
