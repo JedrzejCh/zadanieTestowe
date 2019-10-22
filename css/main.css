@@ -4266,7 +4266,9 @@ section.menu {
   color: #333d3c;
   letter-spacing: 2px;
   font-size: 1.5rem;
-  font-weight: bold; }
+  font-weight: bold;
+  width: 100%;
+  display: block; }
 
 @media (min-width: 768px) and (max-width: 823px) and (orientation: landscape) {
   .sideMenu {
