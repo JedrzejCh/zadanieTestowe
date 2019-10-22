@@ -1,24 +1,4 @@
-// "use strict";
-
-// let bubbleWidth = 0;
-// let bubbleHeight = 0;
-
-// const bubble = document.querySelector(".bubble");
-
-// const setSize = (bubbleWidth, bubbleHeight) => {
-//   bubble.style.width = bubbleWidth;
-//   bubble.style.height = bubbleHeight;
-// };
-
-// const langSwitch = document.querySelector(".upper__switch");
-
-
-// const langSwitches = document.querySelector(".upper__switches");
-
-
-// langSwitches.addEventListener("click", () => {
-//   langSwitch.classList.add(".upper__switch--js")
-// })
+"use strict"
 
 
 function scrollAnimation() {
@@ -27,15 +7,15 @@ function scrollAnimation() {
       const windowHeight2 = $(window).height();
       const scrollValue = $(this).scrollTop();
       const windowHeight = $(window).height();
-      // features
+
       const $about = $(".about");
       const aboutFromTop = $about.offset().top
       const aboutHeight = $about.height()
-      // examples
+
       const $features = $(".features");
       const featuresFromTop = $features.offset().top
       const featuresHeight = $features.height()
-      // kontakt
+
       const $services = $(".services__offer");
       const servicesFromTop = $services.offset().top
       const servicesHeight = $services.height()
