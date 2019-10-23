@@ -1015,6 +1015,16 @@ html {
       bottom: 10%;
       left: 20%; } }
 
+body {
+  -webkit-animation: fadeInAnimation ease 3.5s;
+          animation: fadeInAnimation ease 3.5s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased; }
+
 body::-webkit-scrollbar {
   width: 1rem;
   overflow: hidden; }
@@ -1028,20 +1038,9 @@ body::-webkit-scrollbar-thumb {
   background: #cad2f2;
   background: linear-gradient(357deg, #cad2f2 1%, #cbf2f1 51%, #cbd8f2 96%);
   opacity: .3; }
-  body::-webkit-scrollbar-thumb:hover {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1); }
 
 html {
   scroll-behavior: smooth; }
-
-body {
-  -webkit-animation: fadeInAnimation ease 3.5s;
-          animation: fadeInAnimation ease 3.5s;
-  -webkit-animation-iteration-count: 1;
-          animation-iteration-count: 1;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards; }
 
 @-webkit-keyframes fadeInAnimation {
   0% {
@@ -1915,9 +1914,9 @@ body {
   -webkit-transform: scale(0.5);
       -ms-transform: scale(0.5);
           transform: scale(0.5);
-  -webkit-transition: 1s;
-  -o-transition: 1s;
-  transition: 1s; }
+  -webkit-transition: 1.5s;
+  -o-transition: 1.5s;
+  transition: 1.5s; }
 
 .active {
   -webkit-transform: scale(1);
