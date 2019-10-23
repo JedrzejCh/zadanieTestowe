@@ -132,11 +132,13 @@
       left: 70%
   
 @media (min-width: 1025px) and (max-width: 1280px) 
+  .services
+    margin-bottom: 4.5rem
   .services__realizations
     width: 40vw
     height: 23vw
-    padding: 0 4rem 4rem 4rem
-    left: 13%
+    padding: 1rem 4rem 4rem 4rem
+    left: 8%
     top: 11%
   .realizations__paragraph
     width: 55%
@@ -145,10 +147,10 @@
     width: 35vw
     height: 21vw
     padding: 1rem
-    right: 19%
+    right: 13%
     bottom: 19%
   .offer__h3
-    margin-top: .2rem
+    margin-top: 1rem
     margin-bottom: 1rem
     padding-top: 0
   .offer__paragraph
@@ -162,6 +164,13 @@
     &::after
       top: 10%
       left: 70%
+  .object
+    z-index: -1
+    &:nth-child(2)
+      top: 70%
+    &:nth-child(3)
+      right: 6%
+    
 
 @media (max-width: 1024px)
   .services__realizations
@@ -405,13 +414,14 @@
     width: 94vw
     height: 64vw
     position: static
+    padding-bottom: 0rem
   .realizations__h3
     font-size: 2.5rem
     margin-bottom: 1rem
     margin-top: .5rem
   .realizations__paragraph
     width: 75%
-    margin-bottom: 1rem
+    margin-bottom: 1.5rem
     font-size: .9rem
   .services__offer
     width: 83vw
