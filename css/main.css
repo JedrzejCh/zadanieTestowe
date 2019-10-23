@@ -1690,9 +1690,15 @@ body {
         align-self: flex-start; }
   .item__check-btn {
     left: 0%;
-    bottom: -60%; }
+    bottom: -60%;
+    height: 4.5vh;
+    padding-top: 0; }
   .check-btn__span {
-    font-size: 1.6rem; }
+    font-size: 1.6rem;
+    line-height: 4.5vh;
+    vertical-align: center;
+    display: block;
+    padding-top: 0; }
   .about__mission {
     width: 80%;
     padding: 0;
@@ -2695,7 +2701,7 @@ body {
 @media (min-width: 375px) and (max-width: 414px) and (orientation: portrait) {
   .features {
     padding-top: 1rem;
-    height: 220vh; }
+    height: 226vh; }
   .features__description {
     margin-top: 2.5rem;
     margin-bottom: 1rem;
@@ -2729,7 +2735,7 @@ body {
       top: 74%; }
     .feature__item:nth-of-type(6) {
       right: 6%;
-      bottom: -8%; }
+      bottom: -10%; }
   .feature__description {
     font-size: 0.75rem; }
   .feature__h3 {
@@ -3353,14 +3359,15 @@ body {
   .services__realizations {
     width: 94vw;
     height: 64vw;
-    position: static; }
+    position: static;
+    padding-bottom: 0rem; }
   .realizations__h3 {
     font-size: 2.5rem;
     margin-bottom: 1rem;
     margin-top: .5rem; }
   .realizations__paragraph {
     width: 75%;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
     font-size: .9rem; }
   .services__offer {
     width: 83vw;
@@ -4077,14 +4084,16 @@ section.menu {
 
 @media (min-width: 375px) and (max-width: 414px) and (orientation: portrait) {
   .footer {
-    height: 185vh;
+    height: 209vh;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
-            flex-direction: column; }
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around; }
   .contact {
     width: 100%;
     padding: 0;
@@ -4111,15 +4120,31 @@ section.menu {
   .person__name {
     font-size: 1.7rem; }
   .person__email, .person__number {
-    font-size: 1rem; }
+    font-size: 1rem;
+    text-decoration: none; }
+  .person__number {
+    text-decoration: none;
+    margin-top: 1rem; }
   .contact__form {
     min-width: 90vw;
     padding: 2rem 0 2rem 0; }
+  .btn-form__span {
+    margin-left: 2.5rem; }
+  .form__btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
   .form__input {
     font-size: .85rem;
     padding: 0 4rem; }
   .form__h4 {
     font-size: 2rem; }
+  .form__btn {
+    text-align: center;
+    padding-right: 4rem; }
   .form__label {
     font-size: .85rem;
     padding: 1rem 0; }
