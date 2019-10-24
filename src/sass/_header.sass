@@ -2,6 +2,7 @@
   height: 100vh
   width: 100%
   padding: 3rem 3rem
+  margin-bottom: 1.5rem
 .upper
   display: flex
   flex-direction: row 
@@ -30,6 +31,7 @@
   background: url("../assets/img/header/fb.png")
 .upper__switches
   font-family: 'ff-good-headline-web-pro-ext', sans-serif
+  padding-right: 3rem
 .upper__switch
   text-transform: uppercase
   text-decoration: none
@@ -48,7 +50,7 @@
   display: flex
   flex-direction: column
   align-items: center
-  margin-top: 4rem
+  margin-top: 5rem
   position: relative
   font-family: 'ff-good-headline-web-pro-ext', sans-serif
 .header__paragraph
@@ -72,7 +74,7 @@
   padding: .2rem 1rem
   text-transform: uppercase
   letter-spacing: 1px
-  margin: 0
+  margin: 1.8rem 0 0 0 
   font-size: 1.5rem
   cursor: pointer
   transition: .2s linear
@@ -84,7 +86,7 @@
     transform: scale(1.1)
 .header__anchor
   display: block
-  margin-top: 10rem
+  margin-top: 13rem
   text-transform: uppercase
   color: #333D3C
   font-weight: bold
@@ -94,24 +96,24 @@
   &::before
     content: ""
     background-image: url("../assets/img/header/span-tło.png")
-    transform: scale(0.8)
+    transform: scale(1)
     width: 769px
     height: 636px
     display: block
     position: absolute
-    top: 0
+    top: 15%
     left: calc(50% - 350px)
     z-index: -1
   &::after
     content: ""
     background-image: url("../assets/img/header/cien.png")
-    transform: scale(0.9)
-    opacity: .5
+    transform: scale(1)
+    opacity: .4
     width: 572px
     height: 367px
     display: block
     position: absolute
-    bottom: -90%
+    bottom: -75%
     left: calc(50% - 293px)
     z-index: -2
 .header__span
@@ -245,6 +247,7 @@
     left: 45%
     width: 20px
     height: 20px
+    z-index: -1
   &:nth-child(13)
     background-image: url("../assets/img/header/up-down11.png")
     bottom: 15%
@@ -285,13 +288,13 @@
     font-size: 1.125rem
     text-decoration: none
     &::before
-      transform: scale(0.65)
-      top: -10%
+      transform: scale(.8)
+      top: 0%
     &::after
-      transform: scale(0.6)
+      transform: scale(.8)
       bottom: -70%
   .header__span
-    bottom: -28%
+    bottom: -20%
   .upper__switches
     padding-top: 1rem
   .header__btn
@@ -309,12 +312,16 @@
 @media (max-width: 1024px) and (orientation: landscape)
   .header
     padding: .7rem 3rem
+    overflow: visible
   .header__container
-    margin-top: 3rem
+    margin-top: 2rem
   .header__span
     &::before
       content: ""
-      transform: scale(.8)
+      transform: scale(.9)
+  // .header__anchor
+  //   &::before
+  //     transform: scale(.7)
   .side-btn 
     top: calc(50% - 18px)
   .bubble
@@ -376,13 +383,13 @@
   .header__anchor
     margin-top: 1rem
     &::before
-      top: -100%
+      top: -90%
       transform: scale(.5)
       opacity: .45
     &::after
       background-image: none
   .header__span
-    bottom: -38%
+    bottom: -18%
   .upper__logo
     &:hover
       transform: scale(1)
@@ -418,6 +425,7 @@
 @media (min-width: 768px) and (orientation: portrait)
   .header
     padding: 3rem 2rem
+    overflow: hidden
   .side-btn 
     top: calc(50% - 18px)
   .header__container
@@ -460,6 +468,7 @@
     font-size: 4rem
   .header__btn
     transition: 0s
+    margin-top: 1rem
     &:hover
       transform: scale(1)
       color: white
@@ -482,7 +491,7 @@
     &::after
       background-image: none
   .header__span
-    bottom: -35%
+    bottom: -15%
   .upper__logo
     &:hover
       transform: scale(1)
@@ -537,6 +546,8 @@
     margin-top: 1.5rem
   .header__paragraph
     font-size: 1.1rem
+  .header__btn
+    margin-top: .5rem
   .header__h1
     font-size: 3.5rem
     margin-top: 1rem
@@ -544,13 +555,13 @@
     margin-top: 1rem
     font-size: 1rem
     &::before
-      top: -150%
+      top: -140%
       transform: scale(.5)
       opacity: .45
     &::after
       background-image: none
   .header__span
-    bottom: -35%
+    bottom: -15%
   .upper__logo
     &:hover
       transform: scale(1)
