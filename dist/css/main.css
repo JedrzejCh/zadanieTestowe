@@ -1015,6 +1015,16 @@ html {
       bottom: 10%;
       left: 20%; } }
 
+body {
+  -webkit-animation: fadeInAnimation ease 3.5s;
+          animation: fadeInAnimation ease 3.5s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased; }
+
 body::-webkit-scrollbar {
   width: 1rem;
   overflow: hidden; }
@@ -1028,20 +1038,9 @@ body::-webkit-scrollbar-thumb {
   background: #cad2f2;
   background: linear-gradient(357deg, #cad2f2 1%, #cbf2f1 51%, #cbd8f2 96%);
   opacity: .3; }
-  body::-webkit-scrollbar-thumb:hover {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1); }
 
 html {
   scroll-behavior: smooth; }
-
-body {
-  -webkit-animation: fadeInAnimation ease 3.5s;
-          animation: fadeInAnimation ease 3.5s;
-  -webkit-animation-iteration-count: 1;
-          animation-iteration-count: 1;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards; }
 
 @-webkit-keyframes fadeInAnimation {
   0% {
@@ -1915,9 +1914,9 @@ body {
   -webkit-transform: scale(0.5);
       -ms-transform: scale(0.5);
           transform: scale(0.5);
-  -webkit-transition: 1s;
-  -o-transition: 1s;
-  transition: 1s; }
+  -webkit-transition: 1.5s;
+  -o-transition: 1.5s;
+  transition: 1.5s; }
 
 .active {
   -webkit-transform: scale(1);
@@ -2286,6 +2285,16 @@ body {
             transform: scale(0.8); } }
 
 @media (min-width: 768px) and (max-width: 823px) and (orientation: landscape) {
+  .features {
+    -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+            transform: scale(1);
+    opacity: 0;
+    -webkit-transition: 2s;
+    -o-transition: 2s;
+    transition: 2s; }
+  .active {
+    opacity: 1; }
   .features__description {
     margin-top: 2rem;
     margin-bottom: 1rem;
@@ -2479,7 +2488,16 @@ body {
 
 @media (min-width: 668px) and (max-width: 767px) and (orientation: landscape) {
   .features {
-    padding-top: 1rem; }
+    padding-top: 1rem;
+    -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+            transform: scale(1);
+    opacity: 0;
+    -webkit-transition: 2s;
+    -o-transition: 2s;
+    transition: 2s; }
+  .active {
+    opacity: 1; }
   .features__description {
     margin-top: 3rem;
     margin-bottom: 1rem;
@@ -2608,6 +2626,9 @@ body {
   .features {
     padding-top: 1rem;
     height: 285vh;
+    -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+            transform: scale(1);
     opacity: 0;
     -webkit-transition: 2s;
     -o-transition: 2s;
@@ -2812,6 +2833,9 @@ body {
     padding-top: 1rem;
     height: 250vh;
     opacity: 0;
+    -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+            transform: scale(1);
     -webkit-transition: 2s;
     -o-transition: 2s;
     transition: 2s; }
@@ -3172,11 +3196,31 @@ body {
   .services {
     margin-top: 4rem;
     margin-bottom: 3rem;
-    height: 85vh; }
+    height: 105vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    position: static; }
   .services__realizations {
     width: 47vw;
     height: 28vw;
-    left: 5%; }
+    position: static;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    -webkit-transform: translateX(0);
+        -ms-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 0; }
   .realizations__h3 {
     font-size: 2.5rem;
     margin-bottom: 1rem;
@@ -3187,8 +3231,14 @@ body {
   .services__offer {
     width: 41vw;
     height: 28vw;
-    right: 9%;
-    bottom: 10%; }
+    position: static;
+    margin-top: 2rem;
+    -webkit-transform: translateX(0);
+        -ms-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 0; }
+  .active {
+    opacity: 1; }
   .offer__h3 {
     font-size: 2.5rem;
     margin-top: .5rem;
@@ -3260,13 +3310,32 @@ body {
 @media (min-width: 668px) and (max-width: 767px) and (orientation: landscape) {
   .services {
     margin-top: 4rem;
-    margin-bottom: 3rem;
-    height: 85vh; }
+    margin-bottom: 5rem;
+    height: 95vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    position: static; }
   .services__realizations {
     width: 50vw;
     height: 30vw;
-    left: 5%;
-    top: 8%; }
+    position: static;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    -webkit-transform: translateX(1);
+        -ms-transform: translateX(1);
+            transform: translateX(1);
+    opacity: 0; }
   .realizations__h3 {
     font-size: 2.5rem;
     margin-bottom: 1rem;
@@ -3274,12 +3343,22 @@ body {
   .realizations__paragraph {
     width: 55%;
     margin-bottom: 1rem;
-    font-size: .9rem; }
+    font-size: .9rem;
+    -webkit-transform: translateX(1);
+        -ms-transform: translateX(1);
+            transform: translateX(1);
+    opacity: 1; }
   .services__offer {
     width: 43vw;
     height: 31vw;
-    right: 7%;
-    bottom: 10%; }
+    position: static;
+    margin-top: 2rem;
+    -webkit-transform: translateX(1);
+        -ms-transform: translateX(1);
+            transform: translateX(1);
+    opacity: 0; }
+  .active {
+    opacity: 1; }
   .offer__h3 {
     font-size: 2.5rem;
     margin-top: .5rem;
@@ -3309,14 +3388,33 @@ body {
 
 @media (min-width: 568px) and (max-width: 667px) and (orientation: landscape) {
   .services {
-    margin-top: 8rem;
+    margin-top: 9rem;
     margin-bottom: 2rem;
-    height: 100vh; }
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    position: static; }
   .services__realizations {
     width: 55vw;
     height: 33vw;
-    left: 3%;
-    top: 8%; }
+    position: static;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    -webkit-transform: translateX(0);
+        -ms-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 0; }
   .realizations__h3 {
     font-size: 2.1rem;
     margin-bottom: 1rem;
@@ -3324,12 +3422,24 @@ body {
   .realizations__paragraph {
     width: 75%;
     margin-bottom: 1rem;
-    font-size: .8rem; }
+    font-size: .8rem;
+    position: static;
+    margin-top: 2rem;
+    -webkit-transform: translateX(1);
+        -ms-transform: translateX(1);
+            transform: translateX(1);
+    opacity: 1; }
   .services__offer {
     width: 47vw;
     height: 31vw;
-    right: 4%;
-    bottom: 10%; }
+    position: static;
+    margin-top: 2rem;
+    -webkit-transform: translateX(0);
+        -ms-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 0; }
+  .active {
+    opacity: 1; }
   .offer__h3 {
     font-size: 2.1rem;
     margin-top: 0rem;
@@ -3383,6 +3493,7 @@ body {
     height: 64vw;
     position: static;
     margin-bottom: 1rem;
+    padding-bottom: 1rem;
     -webkit-transform: translateX(0);
         -ms-transform: translateX(0);
             transform: translateX(0);
@@ -3454,7 +3565,13 @@ body {
   .services__realizations {
     width: 90vw;
     height: 65vw;
-    position: static; }
+    position: static;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    -webkit-transform: translateX(0);
+        -ms-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 0; }
   .realizations__h3 {
     font-size: 2.1rem;
     margin-bottom: 1rem;
@@ -3466,7 +3583,15 @@ body {
   .services__offer {
     width: 80vw;
     height: 60vw;
-    position: static; }
+    position: static;
+    position: static;
+    margin-top: 2rem;
+    -webkit-transform: translateX(0);
+        -ms-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 0; }
+  .active {
+    opacity: 1; }
   .offer__h3 {
     font-size: 2.1rem;
     margin-bottom: 1rem; }
@@ -3985,7 +4110,13 @@ section.menu {
     font-size: .9rem; }
   .contact__form {
     max-width: 32vw;
-    padding: 1rem 0 1rem 0; }
+    padding: 1rem 0 1rem 0;
+    opacity: 1;
+    -webkit-transition: 0s;
+    -o-transition: 0s;
+    transition: 0s; }
+  .active {
+    opacity: 1; }
   .form__input {
     font-size: .7rem;
     padding: 0 3rem; }
@@ -4038,7 +4169,8 @@ section.menu {
 
 @media (min-width: 568px) and (max-width: 667px) and (orientation: landscape) {
   .footer {
-    height: 205vh; }
+    height: 205vh;
+    margin-top: 4rem; }
   .contact {
     width: 100%;
     padding: 0; }
@@ -4055,7 +4187,13 @@ section.menu {
     font-size: .8rem; }
   .contact__form {
     max-width: 44vw;
-    padding: 1rem 0 1rem 0; }
+    padding: 1rem 0 1rem 0;
+    opacity: 1;
+    -webkit-transition: 0s;
+    -o-transition: 0s;
+    transition: 0s; }
+  .active {
+    opacity: 1; }
   .form__input {
     font-size: .7rem;
     padding: 0 3rem; }
@@ -4160,7 +4298,13 @@ section.menu {
     margin-top: 1rem; }
   .contact__form {
     min-width: 90vw;
-    padding: 2rem 0 2rem 0; }
+    padding: 2rem 0 2rem 0;
+    opacity: 1;
+    -webkit-transition: 0s;
+    -o-transition: 0s;
+    transition: 0s; }
+  .active {
+    opacity: 1; }
   .btn-form__span {
     margin-left: 2.5rem; }
   .form__btn {
@@ -4294,7 +4438,13 @@ section.menu {
     font-size: .9rem; }
   .contact__form {
     min-width: 85vw;
-    padding: 1.5rem 0 1.5rem 0; }
+    padding: 1.5rem 0 1.5rem 0;
+    opacity: 1;
+    -webkit-transition: 0s;
+    -o-transition: 0s;
+    transition: 0s; }
+  .active {
+    opacity: 1; }
   .form__input {
     font-size: .75rem;
     padding: 0 3.5rem; }
