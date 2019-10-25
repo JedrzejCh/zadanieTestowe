@@ -3221,13 +3221,13 @@ html {
     height: auto;
     position: static;
     margin-bottom: 1rem;
-    -webkit-transform: translateX(0);
-        -ms-transform: translateX(0);
-            transform: translateX(0);
+    -webkit-transform: translateX(-150%);
+        -ms-transform: translateX(-150%);
+            transform: translateX(-150%);
     opacity: 1;
-    -webkit-transition-property: none;
-    -o-transition-property: none;
-    transition-property: none;
+    -webkit-transition-property: 1.5s;
+    -o-transition-property: 1.5s;
+    transition-property: 1.5s;
     padding: 2rem 1rem; }
   .realizations__h3 {
     font-size: 2.5rem;
@@ -3241,14 +3241,18 @@ html {
     height: auto;
     position: static;
     margin-top: 2rem;
-    -webkit-transform: translateX(0);
-        -ms-transform: translateX(0);
-            transform: translateX(0);
+    -webkit-transform: translateX(150%);
+        -ms-transform: translateX(150%);
+            transform: translateX(150%);
     opacity: 1;
-    -webkit-transition-property: none;
-    -o-transition-property: none;
-    transition-property: none;
+    -webkit-transition-property: 1.5s;
+    -o-transition-property: 1.5s;
+    transition-property: 1.5s;
     padding: 2rem 1rem; }
+  .active {
+    -webkit-transform: translate(0);
+        -ms-transform: translate(0);
+            transform: translate(0); }
   .offer__h3 {
     font-size: 2.5rem;
     margin-top: .5rem;
@@ -3344,13 +3348,13 @@ html {
     position: static;
     margin-bottom: 1rem;
     padding-bottom: 1rem;
-    -webkit-transform: translateX(1);
-        -ms-transform: translateX(1);
-            transform: translateX(1);
+    -webkit-transform: translateX(-150%);
+        -ms-transform: translateX(-150%);
+            transform: translateX(-150%);
     opacity: 1;
-    -webkit-transition-property: none;
-    -o-transition-property: none;
-    transition-property: none; }
+    -webkit-transition-property: 1.5s;
+    -o-transition-property: 1.5s;
+    transition-property: 1.5s; }
   .realizations__h3 {
     font-size: 2.5rem;
     margin-bottom: 1rem;
@@ -3359,22 +3363,23 @@ html {
     width: 55%;
     margin-bottom: 1rem;
     font-size: 1rem;
-    -webkit-transform: translateX(1);
-        -ms-transform: translateX(1);
-            transform: translateX(1);
     opacity: 1; }
   .services__offer {
     width: 43vw;
     height: auto;
     position: static;
     margin-top: 2rem;
-    -webkit-transform: translateX(1);
-        -ms-transform: translateX(1);
-            transform: translateX(1);
+    -webkit-transform: translateX(150%);
+        -ms-transform: translateX(150%);
+            transform: translateX(150%);
     opacity: 1;
-    -webkit-transition-property: none;
-    -o-transition-property: none;
-    transition-property: none; }
+    -webkit-transition-property: 1.5s;
+    -o-transition-property: 1.5s;
+    transition-property: 1.5s; }
+  .active {
+    -webkit-transform: translateX(0);
+        -ms-transform: translateX(0);
+            transform: translateX(0); }
   .offer__h3 {
     font-size: 2.5rem;
     margin-top: .5rem;
@@ -3426,13 +3431,13 @@ html {
     height: auto;
     position: static;
     margin-bottom: 1rem;
-    -webkit-transform: translateX(0);
-        -ms-transform: translateX(0);
-            transform: translateX(0);
+    -webkit-transform: translateX(-100%);
+        -ms-transform: translateX(-100%);
+            transform: translateX(-100%);
     opacity: 1;
-    -webkit-transition-property: none;
-    -o-transition-property: none;
-    transition-property: none;
+    -webkit-transition-property: 1.5s;
+    -o-transition-property: 1.5s;
+    transition-property: 1.5s;
     padding: 2rem 1rem; }
   .realizations__h3 {
     font-size: 2.1rem;
@@ -3457,13 +3462,17 @@ html {
     position: static;
     padding: 2rem 1rem;
     margin-top: 2rem;
+    -webkit-transform: translateX(100%);
+        -ms-transform: translateX(100%);
+            transform: translateX(100%);
+    opacity: 1;
+    -webkit-transition-property: 1.5s;
+    -o-transition-property: 1.5s;
+    transition-property: 1.5s; }
+  .active {
     -webkit-transform: translateX(0);
         -ms-transform: translateX(0);
-            transform: translateX(0);
-    opacity: 1;
-    -webkit-transition-property: none;
-    -o-transition-property: none;
-    transition-property: none; }
+            transform: translateX(0); }
   .offer__h3 {
     font-size: 2.1rem;
     margin-top: 0rem;
@@ -3519,13 +3528,17 @@ html {
     position: static;
     margin-bottom: 1rem;
     padding-bottom: 2rem;
+    -webkit-transform: translateX(-100%);
+        -ms-transform: translateX(-100%);
+            transform: translateX(-100%);
+    opacity: 1;
+    -webkit-transition-property: 1.5s;
+    -o-transition-property: 1.5s;
+    transition-property: 1.5s; }
+  .active {
     -webkit-transform: translateX(0);
         -ms-transform: translateX(0);
-            transform: translateX(0);
-    opacity: 1;
-    -webkit-transition-property: none;
-    -o-transition-property: none;
-    transition-property: none; }
+            transform: translateX(0); }
   .realizations__h3 {
     font-size: 2.5rem;
     margin-bottom: 1rem;
@@ -3539,13 +3552,13 @@ html {
     height: auto;
     position: static;
     margin-top: 2rem;
-    -webkit-transform: translateX(0);
-        -ms-transform: translateX(0);
-            transform: translateX(0);
     opacity: 1;
-    -webkit-transition-property: none;
-    -o-transition-property: none;
-    transition-property: none;
+    -webkit-transition-property: 1.5s;
+    -o-transition-property: 1.5s;
+    transition-property: 1.5s;
+    -webkit-transform: translateX(100%);
+        -ms-transform: translateX(100%);
+            transform: translateX(100%);
     margin-bottom: 2rem; }
   .offer__h3 {
     font-size: 2.5rem;
@@ -3598,13 +3611,13 @@ html {
     position: static;
     margin-bottom: 1rem;
     padding-bottom: 1rem;
-    -webkit-transform: translateX(0);
-        -ms-transform: translateX(0);
-            transform: translateX(0);
+    -webkit-transform: translateX(-100%);
+        -ms-transform: translateX(-100%);
+            transform: translateX(-100%);
     opacity: 1;
-    -webkit-transition-property: none;
-    -o-transition-property: none;
-    transition-property: none; }
+    -webkit-transition-property: 1.5s;
+    -o-transition-property: 1.5s;
+    transition-property: 1.5s; }
   .realizations__h3 {
     font-size: 2.1rem;
     margin-bottom: 1rem;
@@ -3623,9 +3636,16 @@ html {
         -ms-transform: translateX(0);
             transform: translateX(0);
     opacity: 1;
-    -webkit-transition-property: none;
-    -o-transition-property: none;
-    transition-property: none; }
+    -webkit-transition-property: 1.5s;
+    -o-transition-property: 1.5s;
+    transition-property: 1.5s;
+    -webkit-transform: translateX(100%);
+        -ms-transform: translateX(100%);
+            transform: translateX(100%); }
+  .active {
+    -webkit-transform: translateX(0);
+        -ms-transform: translateX(0);
+            transform: translateX(0); }
   .offer__h3 {
     font-size: 2.1rem;
     margin-bottom: 1rem; }
