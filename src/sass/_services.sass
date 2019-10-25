@@ -210,7 +210,7 @@
   .services
     margin-top: 4rem
     margin-bottom: 3rem
-    height: 105vh
+    height: auto
     display: flex
     flex-direction: column
     align-items: center
@@ -218,12 +218,13 @@
     position: static
   .services__realizations
     width: 47vw
-    height: 28vw
+    height: auto
     position: static
     margin-bottom: 1rem
-    padding-bottom: 1rem
     transform: translateX(0)
-    opacity: 0
+    opacity: 1
+    transition-property: none
+    padding: 2rem 1rem
   .realizations__h3
     font-size: 2.5rem
     margin-bottom: 1rem
@@ -233,13 +234,13 @@
     font-size: .9rem
   .services__offer
     width: 41vw
-    height: 28vw
+    height: auto
     position: static
     margin-top: 2rem
     transform: translateX(0)
-    opacity: 0
-  .active
     opacity: 1
+    transition-property: none
+    padding: 2rem 1rem
   .offer__h3
     font-size: 2.5rem
     margin-top: .5rem
@@ -272,11 +273,11 @@
   .services
     margin-top: 5rem
     margin-bottom: 4rem
-    height: 65vh
+    min-height: 65vh
   .services__realizations
     width: 53vw
-    height: 32vw
-    padding: 1rem
+    height: auto
+    padding: 2rem 1rem
     left: 11%
     top: 8%
   .realizations__h3
@@ -284,10 +285,11 @@
   .realizations__paragraph
     width: 55%
     margin-bottom: 1rem
+    font-size: 1.1rem
   .services__offer
     width: 47vw
-    height: 32vw
-    padding: 1rem
+    height: auto
+    padding: 2rem 1rem
     right: 18%
     bottom: 10%
   .offer__h3
@@ -297,6 +299,7 @@
   .offer__paragraph
     margin-bottom: 1.9rem
     width: 75%
+    font-size: 1.1rem
   .object
     position: absolute
     &:nth-child(2)
@@ -315,7 +318,7 @@
   .services
     margin-top: 4rem
     margin-bottom: 5rem
-    height: 95vh
+    height: auto
     display: flex
     flex-direction: column
     align-items: center
@@ -323,12 +326,13 @@
     position: static
   .services__realizations
     width: 50vw
-    height: 30vw
+    height: auto
     position: static
     margin-bottom: 1rem
     padding-bottom: 1rem
     transform: translateX(1)
-    opacity: 0
+    opacity: 1
+    transition-property: none
   .realizations__h3
     font-size: 2.5rem
     margin-bottom: 1rem
@@ -336,24 +340,23 @@
   .realizations__paragraph
     width: 55%
     margin-bottom: 1rem
-    font-size: .9rem
+    font-size: 1rem
     transform: translateX(1)
     opacity: 1
   .services__offer
     width: 43vw
-    height: 31vw
+    height: auto
     position: static
     margin-top: 2rem
     transform: translateX(1)
-    opacity: 0
-  .active
     opacity: 1
+    transition-property: none
   .offer__h3
     font-size: 2.5rem
     margin-top: .5rem
     padding-top: 0
   .offer__paragraph
-    font-size: .9rem
+    font-size: 1rem
   .realizations__btn
     font-size: 1.3rem
   .offer__btn
@@ -377,9 +380,9 @@
 
 @media (min-width: 568px) and (max-width:667px) and (orientation: landscape)
   .services
-    margin-top: 9rem
+    margin-top: 10rem
     margin-bottom: 2rem
-    height: 100vh
+    height: auto
     display: flex
     flex-direction: column
     align-items: center
@@ -387,12 +390,13 @@
     position: static
   .services__realizations
     width: 55vw
-    height: 33vw
+    height: auto
     position: static
     margin-bottom: 1rem
-    padding-bottom: 1rem 
     transform: translateX(0)
-    opacity: 0
+    opacity: 1
+    transition-property: none
+    padding: 2rem 1rem
   .realizations__h3
     font-size: 2.1rem
     margin-bottom: 1rem
@@ -400,31 +404,33 @@
   .realizations__paragraph
     width: 75%
     margin-bottom: 1rem
-    font-size: .8rem
+    font-size: 1rem
     position: static
     margin-top: 2rem
     transform: translateX(1)
     opacity: 1
+    transition-property: none
   .services__offer
     width: 47vw
-    height: 31vw
+    height: auto
     position: static
+    padding: 2rem 1rem
     margin-top: 2rem
     transform: translateX(0)
-    opacity: 0
-  .active
     opacity: 1
+    transition-property: none
   .offer__h3
     font-size: 2.1rem
     margin-top: 0rem
     margin-bottom: 1rem
     padding-top: 0
   .offer__paragraph
-    font-size: .8rem
+    font-size: 1rem
     width: 90%
     margin-bottom: 0.5rem
   .realizations__btn
     font-size: 1.1rem
+    margin-bottom: 1rem
   .offer__btn
     font-size: 1.1rem
   .object
@@ -447,7 +453,7 @@
 @media (min-width: 375px) and (max-width: 414px) and (orientation: portrait) 
   .services
     margin-top: 2rem
-    height: 90vh
+    height: auto
     display: flex
     flex-direction: column
     align-items: center
@@ -455,34 +461,35 @@
     position: static
   .services__realizations
     width: 94vw
-    height: 64vw
+    height: auto
     position: static
     margin-bottom: 1rem
-    padding-bottom: 1rem
+    padding-bottom: 2rem
     transform: translateX(0)
-    opacity: 0
+    opacity: 1
+    transition-property: none
   .realizations__h3
     font-size: 2.5rem
     margin-bottom: 1rem
     margin-top: .5rem
   .realizations__paragraph
-    width: 75%
+    width: 90%
     margin-bottom: 1.5rem
-    font-size: .9rem
+    font-size: 1rem
   .services__offer
     width: 83vw
-    height: 60vw
+    height: auto
     position: static
     margin-top: 2rem
     transform: translateX(0)
-    opacity: 0
-  .active
     opacity: 1
+    transition-property: none
+    margin-bottom: 2rem
   .offer__h3
     font-size: 2.5rem
     margin-bottom: 1rem
   .offer__paragraph
-    font-size: .9rem
+    font-size: 1rem
     width: 90%
     margin-bottom: 1rem
   .realizations__btn
@@ -500,7 +507,7 @@
   .realizations__h3
     &::after
       top: 10%
-      right: 5%
+      right: 15%
   .offer__h3
     &::after
       top: 10%
@@ -510,42 +517,43 @@
   .services
     margin-top: 0rem
     margin-bottom: 2rem
-    height: 100vh
+    height: auto
     display: flex
     flex-direction: column
     align-items: center
     justify-content: space-around
   .services__realizations
     width: 90vw
-    height: 65vw
+    height: auto
     position: static
     margin-bottom: 1rem
     padding-bottom: 1rem
     transform: translateX(0)
-    opacity: 0
+    opacity: 1
+    transition-property: none
   .realizations__h3
     font-size: 2.1rem
     margin-bottom: 1rem
     margin-top: .5rem
   .realizations__paragraph
-    width: 75%
+    width: 80%
     margin-bottom: 1rem
-    font-size: .8rem
+    font-size: .9rem
   .services__offer
     width: 80vw
-    height: 60vw
+    height: auto
     position: static
     position: static
     margin-top: 2rem
     transform: translateX(0)
-    opacity: 0
-  .active
     opacity: 1
+    transition-property: none
+  
   .offer__h3
     font-size: 2.1rem
     margin-bottom: 1rem
   .offer__paragraph
-    font-size: .8rem
+    font-size: .9rem
     width: 90%
     margin-bottom: 1rem
   .realizations__btn
@@ -557,6 +565,7 @@
     &:nth-child(2)
       bottom: -4%
       left: 26%
+      z-index: -1
     &:nth-child(3)
       top: 20%
       right: 13%
