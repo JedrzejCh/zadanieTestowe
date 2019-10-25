@@ -1,5 +1,6 @@
 "use strict"
 
+console.log("Jestem świadomy tego, że strona nie jest odzwierciedlona pixel perfect, jednak nie było to po prostu podkreślone w zadniu - to pewnie mój błąd. Kodu CSS również mogłoby być mniej jednak do tego dochodzę dopiero po czasie, i w paru miejscach wiem co mogło by ulec refactorowi jednak zostawiam do oceny pierwsze wykonanie.")
 
 function scrollAnimation() {
   window.onload = function () {

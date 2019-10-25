@@ -1698,11 +1698,11 @@ html {
   .item__check-btn {
     left: 0%;
     bottom: -60%;
-    height: 4.5vh;
+    height: 4vh;
     padding-top: 0; }
   .check-btn__span {
     font-size: 1.6rem;
-    line-height: 4.5vh;
+    line-height: 4vh;
     vertical-align: center;
     display: block;
     padding-top: 0; }
@@ -2943,9 +2943,9 @@ html {
   position: relative; }
 
 .services__realizations {
-  width: 34vw;
-  height: 19vw;
-  padding: 2rem;
+  width: 33vw;
+  height: auto;
+  padding: 3rem;
   background-color: rgba(255, 242, 221, 0.6);
   position: absolute;
   left: 17%;
@@ -2966,7 +2966,7 @@ html {
   text-align: center;
   position: relative;
   color: #333D3C;
-  margin-top: 2rem;
+  margin-top: 1rem;
   margin-bottom: 1.4rem; }
   .realizations__h3::after {
     content: "03";
@@ -2987,7 +2987,7 @@ html {
   color: #868782;
   letter-spacing: 1px;
   color: #868782;
-  width: 30%;
+  width: 35%;
   margin: 0 auto 3rem auto; }
 
 .realizations__btn {
@@ -3005,10 +3005,11 @@ html {
   color: white; }
 
 .services__offer {
-  width: 29vw;
-  height: 16vw;
+  width: 28vw;
+  height: auto;
   background-color: #86857D;
   position: absolute;
+  padding: 2rem;
   right: 19%;
   bottom: 15%;
   -webkit-transform: translateX(110%);
@@ -3034,13 +3035,12 @@ html {
   position: relative;
   color: white;
   margin-top: 1.5rem;
-  margin-bottom: 1.4rem;
-  padding-top: 2rem; }
+  margin-bottom: 1.4rem; }
   .offer__h3::after {
     content: "04";
     position: absolute;
-    top: 45%;
-    right: 38%;
+    top: 15%;
+    right: 36%;
     font-size: 1.1rem;
     color: #BAB8AC;
     font-weight: bold;
@@ -3221,13 +3221,13 @@ html {
     height: auto;
     position: static;
     margin-bottom: 1rem;
-    -webkit-transform: translateX(0);
-        -ms-transform: translateX(0);
-            transform: translateX(0);
+    -webkit-transform: translateX(-150%);
+        -ms-transform: translateX(-150%);
+            transform: translateX(-150%);
     opacity: 1;
-    -webkit-transition-property: none;
-    -o-transition-property: none;
-    transition-property: none;
+    -webkit-transition-property: 1.5s;
+    -o-transition-property: 1.5s;
+    transition-property: 1.5s;
     padding: 2rem 1rem; }
   .realizations__h3 {
     font-size: 2.5rem;
@@ -3241,14 +3241,18 @@ html {
     height: auto;
     position: static;
     margin-top: 2rem;
-    -webkit-transform: translateX(0);
-        -ms-transform: translateX(0);
-            transform: translateX(0);
+    -webkit-transform: translateX(150%);
+        -ms-transform: translateX(150%);
+            transform: translateX(150%);
     opacity: 1;
-    -webkit-transition-property: none;
-    -o-transition-property: none;
-    transition-property: none;
+    -webkit-transition-property: 1.5s;
+    -o-transition-property: 1.5s;
+    transition-property: 1.5s;
     padding: 2rem 1rem; }
+  .active {
+    -webkit-transform: translate(0);
+        -ms-transform: translate(0);
+            transform: translate(0); }
   .offer__h3 {
     font-size: 2.5rem;
     margin-top: .5rem;
@@ -3344,13 +3348,13 @@ html {
     position: static;
     margin-bottom: 1rem;
     padding-bottom: 1rem;
-    -webkit-transform: translateX(1);
-        -ms-transform: translateX(1);
-            transform: translateX(1);
+    -webkit-transform: translateX(-150%);
+        -ms-transform: translateX(-150%);
+            transform: translateX(-150%);
     opacity: 1;
-    -webkit-transition-property: none;
-    -o-transition-property: none;
-    transition-property: none; }
+    -webkit-transition-property: 1.5s;
+    -o-transition-property: 1.5s;
+    transition-property: 1.5s; }
   .realizations__h3 {
     font-size: 2.5rem;
     margin-bottom: 1rem;
@@ -3359,22 +3363,23 @@ html {
     width: 55%;
     margin-bottom: 1rem;
     font-size: 1rem;
-    -webkit-transform: translateX(1);
-        -ms-transform: translateX(1);
-            transform: translateX(1);
     opacity: 1; }
   .services__offer {
     width: 43vw;
     height: auto;
     position: static;
     margin-top: 2rem;
-    -webkit-transform: translateX(1);
-        -ms-transform: translateX(1);
-            transform: translateX(1);
+    -webkit-transform: translateX(150%);
+        -ms-transform: translateX(150%);
+            transform: translateX(150%);
     opacity: 1;
-    -webkit-transition-property: none;
-    -o-transition-property: none;
-    transition-property: none; }
+    -webkit-transition-property: 1.5s;
+    -o-transition-property: 1.5s;
+    transition-property: 1.5s; }
+  .active {
+    -webkit-transform: translateX(0);
+        -ms-transform: translateX(0);
+            transform: translateX(0); }
   .offer__h3 {
     font-size: 2.5rem;
     margin-top: .5rem;
@@ -3426,13 +3431,13 @@ html {
     height: auto;
     position: static;
     margin-bottom: 1rem;
-    -webkit-transform: translateX(0);
-        -ms-transform: translateX(0);
-            transform: translateX(0);
+    -webkit-transform: translateX(-100%);
+        -ms-transform: translateX(-100%);
+            transform: translateX(-100%);
     opacity: 1;
-    -webkit-transition-property: none;
-    -o-transition-property: none;
-    transition-property: none;
+    -webkit-transition-property: 1.5s;
+    -o-transition-property: 1.5s;
+    transition-property: 1.5s;
     padding: 2rem 1rem; }
   .realizations__h3 {
     font-size: 2.1rem;
@@ -3457,13 +3462,17 @@ html {
     position: static;
     padding: 2rem 1rem;
     margin-top: 2rem;
+    -webkit-transform: translateX(100%);
+        -ms-transform: translateX(100%);
+            transform: translateX(100%);
+    opacity: 1;
+    -webkit-transition-property: 1.5s;
+    -o-transition-property: 1.5s;
+    transition-property: 1.5s; }
+  .active {
     -webkit-transform: translateX(0);
         -ms-transform: translateX(0);
-            transform: translateX(0);
-    opacity: 1;
-    -webkit-transition-property: none;
-    -o-transition-property: none;
-    transition-property: none; }
+            transform: translateX(0); }
   .offer__h3 {
     font-size: 2.1rem;
     margin-top: 0rem;
@@ -3519,13 +3528,17 @@ html {
     position: static;
     margin-bottom: 1rem;
     padding-bottom: 2rem;
+    -webkit-transform: translateX(-100%);
+        -ms-transform: translateX(-100%);
+            transform: translateX(-100%);
+    opacity: 1;
+    -webkit-transition-property: 1.5s;
+    -o-transition-property: 1.5s;
+    transition-property: 1.5s; }
+  .active {
     -webkit-transform: translateX(0);
         -ms-transform: translateX(0);
-            transform: translateX(0);
-    opacity: 1;
-    -webkit-transition-property: none;
-    -o-transition-property: none;
-    transition-property: none; }
+            transform: translateX(0); }
   .realizations__h3 {
     font-size: 2.5rem;
     margin-bottom: 1rem;
@@ -3539,13 +3552,13 @@ html {
     height: auto;
     position: static;
     margin-top: 2rem;
-    -webkit-transform: translateX(0);
-        -ms-transform: translateX(0);
-            transform: translateX(0);
     opacity: 1;
-    -webkit-transition-property: none;
-    -o-transition-property: none;
-    transition-property: none;
+    -webkit-transition-property: 1.5s;
+    -o-transition-property: 1.5s;
+    transition-property: 1.5s;
+    -webkit-transform: translateX(100%);
+        -ms-transform: translateX(100%);
+            transform: translateX(100%);
     margin-bottom: 2rem; }
   .offer__h3 {
     font-size: 2.5rem;
@@ -3598,13 +3611,13 @@ html {
     position: static;
     margin-bottom: 1rem;
     padding-bottom: 1rem;
-    -webkit-transform: translateX(0);
-        -ms-transform: translateX(0);
-            transform: translateX(0);
+    -webkit-transform: translateX(-100%);
+        -ms-transform: translateX(-100%);
+            transform: translateX(-100%);
     opacity: 1;
-    -webkit-transition-property: none;
-    -o-transition-property: none;
-    transition-property: none; }
+    -webkit-transition-property: 1.5s;
+    -o-transition-property: 1.5s;
+    transition-property: 1.5s; }
   .realizations__h3 {
     font-size: 2.1rem;
     margin-bottom: 1rem;
@@ -3623,9 +3636,16 @@ html {
         -ms-transform: translateX(0);
             transform: translateX(0);
     opacity: 1;
-    -webkit-transition-property: none;
-    -o-transition-property: none;
-    transition-property: none; }
+    -webkit-transition-property: 1.5s;
+    -o-transition-property: 1.5s;
+    transition-property: 1.5s;
+    -webkit-transform: translateX(100%);
+        -ms-transform: translateX(100%);
+            transform: translateX(100%); }
+  .active {
+    -webkit-transform: translateX(0);
+        -ms-transform: translateX(0);
+            transform: translateX(0); }
   .offer__h3 {
     font-size: 2.1rem;
     margin-bottom: 1rem; }
@@ -3798,8 +3818,8 @@ html {
   .info__h2::after {
     content: "05";
     position: absolute;
-    top: 2%;
-    left: 40%;
+    top: 3%;
+    left: 35%;
     font-size: 1.2rem;
     color: #333D3C;
     font-weight: bold;
